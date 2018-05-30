@@ -14,7 +14,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 **Bold** _Italic_ `Code`
 
-[Google](https://google.com)
+[Google](https://google.com){:target="_blank"}
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
