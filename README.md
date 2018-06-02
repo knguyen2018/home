@@ -4,7 +4,8 @@
 
 [Link](https://knguyen2018.github.io/personal/test)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[My First Website on Google Sites](https://sites.google.com/view/soloschool/home?authuser=1)
+
 # Header 1
 ## Header 2
 ### Header 3
