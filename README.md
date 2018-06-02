@@ -1,7 +1,7 @@
 ## Home
 
-[Github edit](https://github.com/knguyen2018/knguyen.github.io/edit/master/README.md)
-
+[edit on GitHub](https://github.com/knguyen2018/knguyen.github.io/edit/master/README.md)
+[Link](https://knguyen2018.github.io/personal/test)
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 # Header 1
 ## Header 2
