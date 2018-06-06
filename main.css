@@ -152,9 +152,28 @@
     display: block;
 }
 
+* {
+    box-sizing: border-box;
+}
 /*Split Columns*/
-.column2 {
-    column-count: 2;
+.column1 {
+    float: left;
+    width: 75%;
+    padding: 10px;
+    height: 300px;
     column-rule-color: black;
     column-rule-width: medium;
+}
+.column2 {
+    float: right;
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+}
+
+/*Clears row after*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
