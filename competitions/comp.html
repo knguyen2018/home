@@ -4,70 +4,51 @@
 <title>My Website | Competitions</title>
 
 <head>
+    
+<script src="../jquerylearning.js"></script> <!-- used to include navigation bar-->
+    
 <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 <link rel="stylesheet" href="../main.css">
+    
 </head>
 
 <body>
 
-<div class="navbar">
-  <a href="../index.html">Home</a>
-  <a href="comp.html">Competitions</a>
-  <div class="dropdown">
-    <button class="dropbtn">Physics</button>
-    <div class="dropdown-content">
-      <a href="app1.html">AP Physics 1: Algebra-Based</a>
-      <a href="app2.html">AP Physics 2: Algebra-Based</a>
-      <a href="appcm.html">AP Physics C: Mechanics</a>
-    </div>
-  </div>
-  <div class="dropdown2">
-    <button class="dropbtn2">Chemistry</button>
-    <div class="dropdown2-content">
-        <a href="apchem.html">AP Chemistry</a>
-        <a href="ibchemsl.html">IB Chemistry SL</a>
-        <a href="ibchemhl.html">IB Chemistry HL</a>
-    </div>  
-  </div>
-  <div class="dropdown3">
-    <button class="dropbtn3">Mathematics</button>
-    <div class="dropdown3-content">
-      <a href="calcab.html">Calculus AB</a>
-      <a href="calcbc.html">Calculus BC</a>
-      <a href="ibmathsl.html">IB Mathematics SL</a>
-      <a href="ibmathhl.html">IB Mathematics HL</a>
-    </div>
-  </div>
-  <div class="navbar-right">
-    <a href="about.html">About</a>
-  </div>
-</div>
+<div w3-include-html="../nav2.html"></div>
+<script>includeHTML();</script>
 
 <h1>Competitions</h1>
     <p><i>There are lots of competitions avaiable to compete in...</i></p>
-<h3>Physics</h3>
+
+<hr>
+    
+<h2>Physics</h2>
     
     <p>
         IPO - a multi-stage competition starting with f=ma<br>
         <br>
         Other?
     </p>
+    
+<hr>
 
-<h3>Chemistry</h3>
+<h2>Chemistry</h2>
 
     <p>
         Chemistry Field Day (Nebraska)<br>
         <br>
         Other?
     </p>
-
-<h3>Mathematics</h3>
-
-    <p>
-        AMC, AIME, USAMO<br>
-        <br>
-        KMO
-    </p>
+    
+<hr>
+    
+<h2>Mathematics</h2>
+    <h3>High School</h3>
+        <p>AMC, AIME, USAMO, IMO<br>
+        KMO</p>
+    <h3>College</h3>
+        Putnam
 </body>
 
 </html>
