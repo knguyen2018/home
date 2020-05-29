@@ -1,59 +1,54 @@
+
+body {
+  margin: auto;
+  background-image: url("/content/nebulosa.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    
+  color: white;
+  text-align: justify;
+  font-family: Roboto-Thin;
+  line-height: 26px
+}
+
+@font-face {
+  font-family: DancingScript;
+  src: url(font/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Roboto-Thin;
+  src: url(font/Roboto-Thin.ttf);
+}
+
+body p, body h3, body h2, body h1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .navbar {
     height: auto;
     width: auto;
     overflow: hidden;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    font-family: inherit;
 }
 
 .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.dropdown {
+.dropdown, .dropdown2, .dropdown3 {
     float: left;
     overflow: hidden;
 }
 
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.dropdown2 {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown2 .dropbtn2 {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.dropdown3 {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown3 .dropbtn3 {
-    font-size: 16px;    
+.dropdown .dropbtn, .dropdown2 .dropbtn2, .dropdown3 .dropbtn3 {
+    font-size: 20px;    
     border: none;
     outline: none;
     color: white;
@@ -64,8 +59,8 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropdown2:hover .dropbtn2, .dropdown3:hover .dropbtn3 {
-    color: black;
-    background-color: #f2f2f2;
+    color: white;
+    background-color: #333333;
 }
 
 /*Test right alignment*/
@@ -74,101 +69,57 @@
     float: right
 }
 
-.dropdown-content {
+.dropdown-content, .dropdown2-content, .dropdown3-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 /*Dropdown without hover*/
-.dropdown-content a {
+.dropdown-content a, .dropdown2-content a, .dropdown3-content a {
     float: none;
     font-size: 16px;
-    color: black;
+    color: white;
     padding: 14px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 /*Dropdown with hover*/
-.dropdown-content a:hover {
-    background-color: #ddd;
+.dropdown-content a:hover, .dropdown2-content a:hover, .dropdown3-content a:hover  {
+    background-color: #333333;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown2:hover .dropdown2-content, .dropdown3:hover .dropdown3-content {
     display: block;
 }
 
-.dropdown2-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-/*Dropdown without hover*/
-.dropdown2-content a {
-    float: none;
-    font-size: 16px;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-/*Dropdown with hover*/
-.dropdown2-content a:hover {
-    background-color: #ddd;
-}
-.dropdown2:hover .dropdown2-content {
-    display: block;
-}
-
-.dropdown3-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-/*Dropdown without hover*/
-.dropdown3-content a {
-    float: none;
-    font-size: 16px;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-/*Dropdown with hover*/
-.dropdown3-content a:hover {
-    background-color: #ddd;
-}
-.dropdown3:hover .dropdown3-content {
-    display: block;
-}
 
 * {
     box-sizing: border-box;
 }
-/*Split Columns*/
+
+/*Split Columns from index.html*/
 .column1 {
     float: left;
-    width: 75%;
+    width: 74%;
     padding: 10px;
-    height: 300px;
-    column-rule-color: black;
-    column-rule-width: medium;
+    height: auto;
+    background: rgba(242,242,242,0.1);
+    opacity: 0.75;
 }
+
+div.column1:hover, div.column2:hover {
+    opacity: 1;
+}
+
 .column2 {
     float: right;
-    width: 25%;
+    width: 24%;
     padding: 10px;
-    height: 300px;
+    height: auto;
+    background: rgba(242,242,242,0.1);
 }
 
 /*Clears row after*/
