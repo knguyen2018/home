@@ -17,6 +17,7 @@ var modal2 = document.getElementById("menuBtn");
 window.onclick = function(event) {
   if (event.target != modal2 && event.target != modal && event.target.parentNode != modal) {
     modal.style.width = "0px";
+    modal2.style.display = "block";
   }
 }
 
