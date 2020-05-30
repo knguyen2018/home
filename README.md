@@ -2,18 +2,18 @@
 
 [edit on GitHub](https://github.com/knguyen2018/knguyen.github.io/edit/master/README.md)
 
-[Link](https://knguyen2018.github.io/personal/test)
+[Link](https://knguyen2018.github.io/home)
 
 [My First Website on Google Sites](https://sites.google.com/view/soloschool/home?authuser=1)
 
-# Header 1
-## Header 2
+# The Purpose
+- mainly to see how well I can do web-design
+- I also want useful references for myself
+- I do hope that it can be helpful to other students
+## How to Use It
+1. Look for your subject and study it
+2. idk what else
 ### Header 3
-- Bulleted
-- List
-
-1. Numbered
-2. List
 
 **Bold** _Italic_ `Code`
 

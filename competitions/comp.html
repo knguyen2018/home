@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<title>My Website | Competitions</title>
+<title>KN20 | Competitions</title>
 
 <head>
     
@@ -10,13 +10,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
     
 <link rel="stylesheet" href="../main.css">
-    
+
+<!--Include Navigation Bar-->
+<script src="../jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#navbar").load("../navbar2.html"); 
+    });
+    </script>
+  
 </head>
 
 <body>
+<div id="navbar"></div>
 
-<div w3-include-html="../nav2.html"></div>
-<script>includeHTML();</script>
 
 <h1>Competitions</h1>
     <p><i>There are lots of competitions avaiable to compete in...</i></p>
@@ -49,6 +56,15 @@
         KMO</p>
     <h3>College</h3>
         Putnam
+  
+  
+  
+  
+  
+  
+
+<script src="../navbar.js"></script>
+  
 </body>
 
 </html>

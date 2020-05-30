@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<style>
+    
+@font-face {
+  font-family: Roboto-Thin;
+  src: url(font/Roboto-Thin.ttf);
+}
+
+/* The sidepanel menu */
+.sidepanel {
+  height: auto; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 40px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  font-family: Roboto-Thin;
+}
+
+/* The sidepanel links */
+.sidepanel a, .dropdown-btn, .dropdown-btn2 {
+  padding: 6px 16px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap; /* text in navigation bar doesn't wrap */
+}
+
+.dropdown-container, .dropdown-container2 {
+  display: none;
+  background: none;
+  padding-left: 8px;
+  white-space: nowrap;
+  transition: all 0.5s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover, .dropdown-btn:hover, .dropdown-btn2:hover {
+  color: #f1f1f1;
+}
+    
+/* I honestly don't know what these do */
+.main {
+  margin-right: 200px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Button used to close the sidepanel */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+}
+
+/* Button used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  right: 0;
+  top: 0;
+  position: fixed;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+</style>
+
+
+<body>
+
+<div class="sidepanel-container">
+<!-- The full sidepanel-->
+  <div id="mySidePanel" class="sidepanel">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <button class="dropdown-btn">Math</button>
+    <div class="dropdown-container">
+      <a href="#">Math Shit</a>
+      <a href="#">More Shit</a>
+      <a href="#">idk</a>
+      <a href="#">Stuff</a>
+    </div>
+  <button class="dropdown-btn">Physics</button>
+    <div class="dropdown-container2">
+      <a href="#">Physics Shit</a>
+      <a href="#">Fuck, this is hard</a>
+    </div>
+  <a href="#">Chemistry</a>
+  <a href="competitions/comp.html">Competitions</a>
+  </div>
+</div>
+
+<!--Menu Button-->
+<button id="menuBtn" class="openbtn" onclick="openNav()">&#9776;</button>
+    
+
+<!--Script for navigation bar-->
+<script src="../navbar.js"></script>
+    
+</body>
+
+</html>
