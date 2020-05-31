@@ -1,6 +1,7 @@
 
 body {
   margin: auto;
+  background-color: black;
   background-image: url("content/nebulosa.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
