@@ -20,13 +20,13 @@
   right: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 40px; /* Place content 60px from the top */
+  padding-top: 30px; /* Place content 40px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
   font-family: Roboto-Thin;
 }
 
 /* The sidepanel links */
-.sidepanel a, .dropdown-btn, .dropdown-btn2 {
+.sidepanel a, .dropdown-btn {
   padding: 6px 16px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -40,16 +40,15 @@
   white-space: nowrap; /* text in navigation bar doesn't wrap */
 }
 
-.dropdown-container, .dropdown-container2 {
+.dropdown-container, .dropdown-container2, .dropdown-container3 {
   display: none;
   background: none;
   padding-left: 8px;
   white-space: nowrap;
-  transition: all 0.5s;
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidepanel a:hover, .dropdown-btn:hover, .dropdown-btn2:hover {
+.sidepanel a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
 }
     
@@ -84,11 +83,103 @@
   right: 0;
   top: 0;
   position: fixed;
+  display: block;
 }
 
 .openbtn:hover {
   background-color: #444;
 }
+
+/* For Desktop Only. The default is mobile, keep that in mind*/
+@media only screen and (min-width: 700px) {
+
+.sidepanel {
+    transition: 0s;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: inherit;
+    left: 0;
+    background-color: black;
+    font-family: inherit;
+    padding-top: 0;
+}
+
+.sidepanel a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown, .dropdown2, .dropdown3 {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-btn {
+    text-decoration: none;
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+    background-color: inherit;
+    background: none;
+    font-family: inherit;
+    margin: 0;
+}
+
+.sidepanel a:hover, .dropdown-btn:hover {
+    color: white;
+    background-color: #333333;
+}
+
+
+
+.dropdown-container, .dropdown-container2, .dropdown-container3 {
+    display: block;
+    position: absolute;
+    background-color: black;
+    padding-left: 0px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*Dropdown without hover*/
+.dropdown-container a, .dropdown-container2 a, .dropdown-container3 a {
+    float: none;
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: none;
+    text-align: left;
+}
+/*Dropdown with hover*/
+.dropdown-container a:hover, .dropdown-container2 a:hover, .dropdown-container3 a:hover  {
+    background-color: #333333;
+}
+
+.sidepanel .closebtn, .openbtn {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.dropdown:hover .dropdown-container a, .dropdown2:hover .dropdown-container2 a, .dropdown3:hover .dropdown-container3 a {
+    display: block;
+}
+
+}
+/* end of media restriction for desktop */
+
 </style>
 
 
@@ -99,19 +190,28 @@
   <div id="mySidePanel" class="sidepanel">
     <a class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
+    <div id='box1' class="dropdown">
     <button class="dropdown-btn">Math</button>
-    <div class="dropdown-container">
-      <a href="#">Math Shit</a>
-      <a href="#">More Shit</a>
-      <a href="#">idk</a>
-      <a href="#">Stuff</a>
+      <div class="dropdown-container">
+        <a href="#">Math Shit</a>
+        <a href="#">More Shit</a>
+        <a href="#">idk</a>
+        <a href="#">Stuff</a>
+      </div>
     </div>
-  <button class="dropdown-btn">Physics</button>
-    <div class="dropdown-container2">
+    <div id='box2' class="dropdown2">
+    <button class="dropdown-btn">Physics</button>
+      <div class="dropdown-container2">
       <a href="#">Physics Shit</a>
       <a href="#">Fuck, this is hard</a>
+      </div>
     </div>
-  <a href="#">Chemistry</a>
+    <div id='box3' class="dropdown3">
+    <button class="dropdown-btn">Chemistry</button>
+      <div class="dropdown-container3">
+      <a href="#">Chemistry Shit</a>
+      </div>  
+    </div>
   <a href="competitions/comp.html">Competitions</a>
   </div>
 </div>
@@ -121,6 +221,7 @@
     
 
 <!--Script for navigation bar-->
+
 <script src="navbar.js"></script>
     
 </body>
